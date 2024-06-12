@@ -11,31 +11,31 @@ body {
 
 h1 {
     color: #333;
-    margin-bottom: 40px; /* Increased margin for the title */
-    font-size: 24px; /* Increased font size for the title */
+    margin-bottom: 40px; 
+    font-size: 24px; 
 }
 
 .image-container {
     display: flex;
-    justify-content: center; /* Center the images horizontally */
-    align-items: center; /* Center the images vertically */
-    margin-bottom: 40px; /* Increased margin for the image container */
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 40px;
 }
 
 .image-container img {
-    width: 200px; /* Adjust image width */
-    height: auto; /* Maintain aspect ratio */
+    width: 200px;
+    height: auto; 
 }
 
 .subtitle {
     display: block;
     text-align: center;
-    margin-top: 10px; /* Increased margin for the subtitle */
-    font-size: 16px; /* Increased font size for the subtitle */
+    margin-top: 10px;
+    font-size: 16px;
 }
 
 #flipButton {
-    padding: 10px 20px; /* Increased padding for the button */
-    font-size: 18px; /* Increased font size for the button */
-    margin-top: 20px; /* Increased margin for the button */
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
 }

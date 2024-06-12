@@ -23,25 +23,25 @@ function flipCoin() {
         const randomContainer = Math.random() < 0.5 ? image1 : image2;
 
         randomContainer.src = image;
-        randomContainer.style.display = 'block'; // Show the selected image
+        randomContainer.style.display = 'block'; 
 
-        // Hide the other image
+       
         const otherContainer = randomContainer === image1 ? image2 : image1;
         otherContainer.style.display = 'none';
 
-        // Set the subtitle for the displayed image
+        
         if (randomContainer === image1) {
             subtitle1.textContent = subtitle;
-            subtitle2.textContent = ''; // Clear the other subtitle
+            subtitle2.textContent = ''; 
         } else {
             subtitle2.textContent = subtitle;
-            subtitle1.textContent = ''; // Clear the other subtitle
+            subtitle1.textContent = '';
         }
 
-        // Hide the "or" text
+       
         orText.style.display = 'none';
 
-        // Resolve the promise after a delay
+        
         setTimeout(() => {
             resolve();
         }, 1500);
@@ -49,11 +49,10 @@ function flipCoin() {
 }
 
 async function flipAlternately() {
-    // Hide subtitles during delay
+   
     subtitle1.style.display = 'none';
     subtitle2.style.display = 'none';
 
-    // Alternate images for a few times
     for (let i = 0; i < 10; i++) {
         if (i % 2 === 0) {
             image1.style.display = 'block';
@@ -65,10 +64,10 @@ async function flipAlternately() {
         await new Promise(resolve => setTimeout(resolve, 300));
     }
 
-    // Show the result
+    
     await flipCoin();
 
-    // Show subtitles for the result
+    
     subtitle1.style.display = 'block';
     subtitle2.style.display = 'block';
 }
