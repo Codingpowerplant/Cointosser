@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 40px; /* Increased margin for the title */
+    font-size: 24px; /* Increased font size for the title */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+    margin-bottom: 40px; /* Increased margin for the image container */
+}
+
+.image-container img {
+    width: 200px; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.subtitle {
+    display: block;
+    text-align: center;
+    margin-top: 10px; /* Increased margin for the subtitle */
+    font-size: 16px; /* Increased font size for the subtitle */
+}
+
+#flipButton {
+    padding: 10px 20px; /* Increased padding for the button */
+    font-size: 18px; /* Increased font size for the button */
+    margin-top: 20px; /* Increased margin for the button */
+}
